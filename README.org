@@ -1,0 +1,12 @@
+Since nob-sme is not developed at all, we do (in apertium-sme-nob)
+: make nob-sme
+: cp /path/to/apertium-nob/nob.automorf.bin nob-sme.automorf.bin
+which puts the untrimmed nob analyser in sme-nob.
+
+irstlm requires boost; on Ubuntu, do
+: sudo apt-get install libboost-all-dev
+
+* TODO nob-side tag trimming needs work
+<pers>/<impers> shouldn't be in the nopardefs dictionary (are there other such?)
+
+* TODO should probably have deps in a separate makefile
